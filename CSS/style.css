@@ -27,6 +27,18 @@ body {
   color: var(--azul-texto);
 }
 
+.qr-code-real {
+  width: 132px;
+  height: 132px;
+  display: block;
+  margin: 0 auto 16px;
+  padding: 7px;
+  background-color: #ffffff;
+  border: 1px solid var(--cinza-borda);
+  border-radius: 12px;
+  object-fit: contain;
+}
+
 .cabecalho {
   background-color: var(--cinza-card);
   border-bottom: 1px solid var(--cinza-borda);
