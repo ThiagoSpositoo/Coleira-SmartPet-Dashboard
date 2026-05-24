@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coleira SmartPet | Dashboard</title>
+
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-container">
+      <div class="marca">
+        <div class="marca-icone">🐾</div>
+
+        <div>
+          <h1>Coleira SmartPet</h1>
+          <p>Monitoramento inteligente para pets</p>
+        </div>
+      </div>
+
+      <div class="conexao" id="conexao">
+        <span class="conexao-ponto"></span>
+        <span id="texto-conexao">Conectando...</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="pet-card" id="pet-card">
+      <div class="pet-informacoes">
+        <div class="pet-avatar">🐶</div>
+
+        <div>
+          <p class="legenda">PET MONITORADO</p>
+          <h2 id="nome-pet">Carregando...</h2>
+          <p class="descricao-pet">
+            <span id="raca-pet">---</span>
+            <span class="separador">•</span>
+            <span id="idade-pet">---</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="status-box seguro" id="status-box">
+        <p class="status-titulo">STATUS ATUAL</p>
+        <p class="status-texto" id="status-texto">CARREGANDO</p>
+      </div>
+    </section>
+
+    <section class="alerta-card oculto" id="alerta-card">
+      <div class="alerta-icone">⚠️</div>
+
+      <div>
+        <h3>Alerta ativo: pet possivelmente perdido!</h3>
+        <p>
+          Consulte a última localização registrada e entre em contato
+          com o tutor responsável.
+        </p>
+      </div>
+    </section>
+
+    <section class="cards-monitoramento">
+      <article class="card">
+        <div class="card-topo">
+          <span class="card-titulo">Bateria</span>
+          <span class="card-icone">🔋</span>
+        </div>
+
+        <p class="card-valor">
+          <span id="bateria">--</span><small>%</small>
+        </p>
+
+        <div class="barra">
+          <div class="barra-progresso" id="barra-bateria"></div>
+        </div>
+
+        <p class="card-descricao" id="texto-bateria">
+          Aguardando leitura...
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-topo">
+          <span class="card-titulo">Temperatura</span>
+          <span class="card-icone">🌡️</span>
+        </div>
+
+        <p class="card-valor">
+          <span id="temperatura">--</span><small>°C</small>
+        </p>
+
+        <p class="card-descricao">
+          Leitura coletada pelo sensor DHT22
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-topo">
+          <span class="card-titulo">Última atualização</span>
+          <span class="card-icone">🕒</span>
+        </div>
+
+        <p class="card-horario" id="ultima-atualizacao">
+          Aguardando...
+        </p>
+
+        <p class="card-descricao">
+          Dados enviados pelo ESP32 no Wokwi
+        </p>
+      </article>
+    </section>
+
+    <section class="grade-inferior">
+      <article class="localizacao-card">
+        <div class="secao-titulo">
+          <div>
+            <p class="legenda">RASTREAMENTO</p>
+            <h3>Última localização registrada</h3>
+          </div>
+
+          <span class="selo-simulacao" id="tipo-localizacao">
+            SIMULADA
+          </span>
+        </div>
+
+        <div class="localizacao-conteudo">
+          <div class="mapa-simulado">
+            <div class="mapa-pino">📍</div>
+          </div>
+
+          <div class="dados-localizacao">
+            <p class="endereco" id="localizacao">
+              Carregando localização...
+            </p>
+
+            <div class="coordenadas">
+              <div>
+                <span>Latitude</span>
+                <strong id="latitude">---</strong>
+              </div>
+
+              <div>
+                <span>Longitude</span>
+                <strong id="longitude">---</strong>
+              </div>
+            </div>
+
+            <p class="nota">
+              Localização simulada nesta prova de conceito.
+              Na próxima etapa poderá ser integrada a um módulo GPS real.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="identificacao-card">
+        <p class="legenda">IDENTIFICAÇÃO</p>
+        <h3>QR Code da coleira</h3>
+
+        <div class="qr-placeholder">
+          <span>QR</span>
+        </div>
+
+        <p class="qr-descricao">
+          Consulte os dados do pet e do tutor ao encontrar o animal.
+        </p>
+
+        <a class="botao-identificacao" href="identificacao.html">
+          Visualizar identificação
+        </a>
+      </article>
+    </section>
+
+    <section class="integracao-card">
+      <p>
+        <strong>Integração ativa:</strong>
+        ESP32 no Wokwi → HTTP → Firebase Realtime Database → Dashboard SmartPet
+      </p>
+
+      <span id="origem-dados">Aguardando origem dos dados...</span>
+    </section>
+  </main>
+
+  <script src="../JavaScript/dashboard.js"></script>
+</body>
+</html>

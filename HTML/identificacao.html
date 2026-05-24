@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coleira SmartPet | Identificação do Pet</title>
+
+  <link rel="stylesheet" href="../CSS/identificacao.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a class="voltar" href="index.html">← Voltar ao painel</a>
+
+    <div class="marca">
+      <div class="marca-icone">🐾</div>
+
+      <div>
+        <h1>Coleira SmartPet</h1>
+        <p>Identificação digital do pet</p>
+      </div>
+    </div>
+
+    <div class="conexao" id="conexao">
+      <span class="conexao-ponto"></span>
+      <span id="texto-conexao">Conectando...</span>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="aviso" id="aviso-status">
+      <div class="aviso-icone">✓</div>
+
+      <div>
+        <h2 id="titulo-aviso">Pet monitorado com segurança</h2>
+        <p id="texto-aviso">
+          Esta página contém informações para auxiliar na identificação do animal.
+        </p>
+      </div>
+    </section>
+
+    <section class="cartao-identificacao">
+      <div class="topo-cartao">
+        <div class="avatar">🐶</div>
+
+        <div class="dados-principais">
+          <p class="legenda">IDENTIFICAÇÃO DO PET</p>
+          <h2 id="nome-pet">Carregando...</h2>
+
+          <p class="detalhes-pet">
+            <span id="raca-pet">---</span>
+            <span>•</span>
+            <span id="idade-pet">---</span>
+          </p>
+        </div>
+
+        <div class="status seguro" id="status">
+          <p>Status</p>
+          <strong id="status-texto">---</strong>
+        </div>
+      </div>
+
+      <div class="divisor"></div>
+
+      <div class="grade-dados">
+        <article class="bloco">
+          <p class="bloco-titulo">Tutor responsável</p>
+
+          <div class="linha-dado">
+            <span class="icone">👤</span>
+
+            <div>
+              <small>Nome</small>
+              <strong id="nome-tutor">---</strong>
+            </div>
+          </div>
+
+          <div class="linha-dado">
+            <span class="icone">📞</span>
+
+            <div>
+              <small>Telefone de contato</small>
+              <strong id="telefone-tutor">---</strong>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="bloco">
+          <p class="bloco-titulo">Última localização registrada</p>
+
+          <div class="linha-dado">
+            <span class="icone">📍</span>
+
+            <div>
+              <small>Localização</small>
+              <strong id="localizacao">---</strong>
+            </div>
+          </div>
+
+          <div class="coordenadas">
+            <div>
+              <small>Latitude</small>
+              <strong id="latitude">---</strong>
+            </div>
+
+            <div>
+              <small>Longitude</small>
+              <strong id="longitude">---</strong>
+            </div>
+          </div>
+
+          <p class="simulacao" id="tipo-localizacao">
+            Localização simulada
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="monitoramento">
+      <article class="monitor-card">
+        <p>Bateria da coleira</p>
+        <strong><span id="bateria">--</span>%</strong>
+
+        <div class="barra">
+          <div class="barra-progresso" id="barra-bateria"></div>
+        </div>
+      </article>
+
+      <article class="monitor-card">
+        <p>Temperatura registrada</p>
+        <strong><span id="temperatura">--</span> °C</strong>
+        <small>Sensor DHT22</small>
+      </article>
+
+      <article class="monitor-card">
+        <p>Última atualização</p>
+        <strong class="horario" id="ultima-atualizacao">---</strong>
+        <small id="origem-dados">Aguardando dados...</small>
+      </article>
+    </section>
+
+    <section class="instrucao">
+      <h3>Encontrou este pet?</h3>
+      <p>
+        Utilize as informações de contato acima para informar o tutor.
+        Em uma versão final, esta página poderá oferecer contato rápido,
+        aviso de localização e suporte ao resgate.
+      </p>
+    </section>
+  </main>
+
+  <script src="../JavaScript/identificacao.js"></script>
+</body>
+</html>
