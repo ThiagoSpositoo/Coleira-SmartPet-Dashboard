@@ -262,7 +262,7 @@ Essa página apresenta os dados do pet e dados fictícios do tutor para demonstr
 Acesse o protótipo simulado pelo link:
 
 🔗 **Link do Wokwi:**  
-`(https://wokwi.com/projects/464952093084721153)`
+[Protótipo IoT - Coleira SmartPet](https://wokwi.com/projects/464952093084721153)
 
 Ao abrir o projeto no Wokwi:
 
@@ -400,7 +400,7 @@ O vídeo da apresentação funcional do projeto está disponível no YouTube em 
 | Dashboard publicado | [Acessar Dashboard](https://thiagospositoo.github.io/Coleira-SmartPet-Dashboard/HTML/index.html) |
 | Página de identificação | [Acessar Identificação do Pet](https://thiagospositoo.github.io/Coleira-SmartPet-Dashboard/HTML/identificacao.html) |
 | Vídeo de apresentação | [Assistir no YouTube](https://youtu.be/PKswJmVo-fw) |
-| Protótipo no Wokwi | `https://wokwi.com/projects/464952093084721153` |
+| Protótipo no Wokwi | [Acessar simulação](https://wokwi.com/projects/464952093084721153) |
 
 ---
 
