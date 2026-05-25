@@ -1,0 +1,24 @@
+COLEIRA SMARTPET - PROTÓTIPO IOT SIMULADO NO WOKWI
+
+Link do projeto:
+COLE_AQUI_O_LINK_COMPARTILHÁVEL_DO_WOKWI
+
+Descrição:https://wokwi.com/projects/464952093084721153
+Protótipo simulado de uma coleira inteligente para pets, desenvolvido com ESP32 no Wokwi.
+
+Componentes utilizados:
+- ESP32
+- Display OLED SSD1306
+- Sensor DHT22
+- Potenciômetro para simulação da bateria
+- Botão para ativação do modo perdido
+- LED vermelho com resistor de 220 ohms para indicação de alerta
+
+Funcionalidades demonstradas:
+- Exibição do nome do pet no display OLED
+- Leitura simulada de temperatura
+- Simulação do nível de bateria
+- Ativação e desativação do modo perdido
+- Acendimento do LED em situação de alerta
+- Envio de dados via HTTP para o Firebase Realtime Database
+- Integração com o dashboard publicado
