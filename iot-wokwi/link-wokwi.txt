@@ -1,7 +1,6 @@
 COLEIRA SMARTPET - PROTÓTIPO IOT SIMULADO NO WOKWI
 
 Link do projeto:
-COLE_AQUI_O_LINK_COMPARTILHÁVEL_DO_WOKWI
 
 Descrição:https://wokwi.com/projects/464952093084721153
 Protótipo simulado de uma coleira inteligente para pets, desenvolvido com ESP32 no Wokwi.
